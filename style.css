@@ -166,7 +166,10 @@ footer p {
 }
 
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 700px) {
+    .body{
+        height: 700px;
+    }
     h1 {
         font-size: 18px;
     }
@@ -176,26 +179,36 @@ footer p {
     }
 
     .flex {
+        
         height: min-content;
         flex-flow: column;
     }
 
     .generador,
     .resultado {
-        height: 200px;
-        width: 300px;
+        height: 220px;
+        width: 70%;
         margin: 5px auto;
     }
-
-    #textoBase{
-        margin: 0;
+    .generador{
+        grid-template-rows: 25% 50% 25%;
     }
-
+    #textoBase{
+        margin: auto;
+        height: auto;
+    }
+    .btns{
+        margin: auto;
+    }
     input[type="button"] {
         margin: 0;
         font-size: smaller;
         height: max-content;
         width: 40%;
+    }
+
+    .texto{
+        font-size: 8px;
     }
 
     #copy{
