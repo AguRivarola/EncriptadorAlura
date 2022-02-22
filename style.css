@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*,
+:root {
+    --color1: #00f000;
+    --color2: #000801;
+    --color3: #DFEFE2;
+    --colorBackgroundWhite: rgba(223, 239, 226, .1);
+    --colorBackgroundGreen: rgba(12, 205, 88, .3);
+    --color4: #0CCD58;
+    --color5: #000408;
+    --color6: #0B6A26;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color5);
+    color: var(--color4);
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+header{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+header h1 {
+    width: max-content;
+}
+
+footer {
+    height: 15%;
+    color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 65%;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+}
+
+.generador {
+    /* align-items: center; */
+    border: dashed 3px var(--color4);
+    border-radius: 15px;
+    background-color: var(--colorBackgroundWhite);
+    /* display: flex; */
+    /* flex-flow: column; */
+    height: 100%;
+    /* justify-content: space-evenly; */
+    padding: 15px;
+    width: 40%;
+    /* grid */
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.generador h2{
+    width: 100%;
+}
+
+.resultado {
+    align-items: center;
+    border: dashed 3px var(--color3);
+    border-radius: 15px;
+    background-color: var(--colorBackgroundGreen);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+    padding: 15px;
+
+}
+
+input[type="text"] {
+    grid-row: 2;
+    background-color: var(--color2);
+    border-radius: 15px;
+    color: #0CCD58;
+    /* padding: 0 15px; */
+    height: 50%;
+    margin: 50px auto auto;
+    width: 100%;
+}
+input[type="text"]:focus{
+    border: solid 2px var(--color4)
+}
+
+.btns {
+    grid-row: 3;
+    margin: 70px auto auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+}
+
+input[type="button"] {
+    border-radius: 5px;
+    color: var(--color2);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px .5px var(--color3);
+    height: 100%;
+    width: 40%;
+}
+
+
+input[value="encriptar"] {
+    background-color: var(--color4);
+}
+
+input[value="desencriptar"] {
+    background-color: var(--color6);
+}
+
+.contenido{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    /* display: inline-block; */
+    background-color: var(--colorBackgroundWhite);
+    border-radius: 15px;
+    color: var(--color3);
+    padding: 10px;
+    margin: 10px;
+    overflow-wrap: anywhere;
+}
+
+footer p {
+    /* margin: auto; */
+    width: max-content;
+}
+
+#copy{
+    background-color: var(--color4);
+    bottom: 0;
+    height: max-content;
+    width: 10vw ;
+}
